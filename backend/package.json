@@ -1,0 +1,9 @@
+{
+    "name": "my-project",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "uvicorn app:app --reload --port 8000",
+        "build": "vite build",
+        "preview": "vite preview"
+    }
+}
