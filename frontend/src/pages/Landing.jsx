@@ -4,23 +4,31 @@ import { Link2, MessageSquare, ShieldCheck, Lock, Zap } from 'lucide-react';
 
 const Landing = () => {
   return (
-    <div className="flex-grow bg-[#0b1021] text-white flex flex-col w-full relative z-0">
+    <div className="flex-grow bg-transparent text-white flex flex-col w-full relative z-0">
       {/* Static Background Glows */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden -z-10">
-        <div className="absolute top-1/4 left-1/4 w-[40rem] h-[40rem] bg-indigo-500/10 rounded-full blur-[160px] -translate-x-1/2 -translate-y-1/2"></div>
-        <div className="absolute top-3/4 right-1/4 w-[40rem] h-[40rem] bg-purple-500/10 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute top-1/4 left-1/4 w-[24rem] h-[24rem] bg-indigo-500/30 rounded-full blur-[90px] -translate-x-1/2 -translate-y-1/2"></div>
+        <div className="absolute top-3/4 right-1/4 w-[24rem] h-[24rem] bg-purple-500/30 rounded-full blur-[90px] translate-x-1/2 -translate-y-1/2"></div>
       </div>
 
       {/* Hero Section */}
       <section className="min-h-[calc(100vh-6rem)] flex flex-col items-center justify-center p-4 relative z-10">
         <div className="w-full max-w-4xl mx-auto text-center animate-in fade-in slide-in-from-bottom-8 duration-700">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-white">
-            <span className="italic">PhishGuard</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">AI</span>
-          </h1>
-          
-          <p className="text-xl md:text-2xl text-slate-300 font-medium mb-12">
-            Check if a link or message is a phishing threat
-          </p>
+          <div className="inline-flex flex-col items-center bg-[#0b1021]/50 backdrop-blur-xl rounded-[3rem] p-8 md:p-12 mb-10 border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.5)]">
+            <h1 className="text-5xl md:text-7xl font-bold tracking-tighter mb-4 text-white">
+              <span className="italic">PhishGuard</span> <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-purple-400">AI</span>
+            </h1>
+            
+            <p className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-slate-200 to-slate-400 mb-8">
+              Intelligent Defense Against Digital Deception
+            </p>
+
+            <div className="w-3/4 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent mb-8"></div>
+            
+            <p className="text-slate-400 font-semibold tracking-wide text-base md:text-lg">
+              Check if a link or message is a phishing threat
+            </p>
+          </div>
 
           <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
             <Link 
@@ -69,10 +77,12 @@ const Landing = () => {
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent"></div>
 
             <div className="text-center mb-10">
-              <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-4">Global Phishing Landscape</h2>
-              <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-                Over 3.4 billion malicious emails and countless malicious links are sent daily worldwide. Let's break down the threat vectors.
-              </p>
+              <div className="inline-block bg-[#0b1021]/50 backdrop-blur-xl rounded-[2.5rem] px-8 py-6 border border-white/10 shadow-[0_0_40px_rgba(0,0,0,0.4)]">
+                <h2 className="text-3xl md:text-5xl font-extrabold text-white mb-2">Global Phishing Landscape</h2>
+                <p className="text-slate-300 text-lg max-w-2xl mx-auto">
+                  Over 3.4 billion malicious emails and countless malicious links are sent daily worldwide. Let's break down the threat vectors.
+                </p>
+              </div>
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 relative">
