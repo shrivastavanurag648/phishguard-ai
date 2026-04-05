@@ -1,9 +1,15 @@
-# Environment variables
+# env
 .env
 
-# Python cache
+# python
 __pycache__/
 *.pyc
 
-# Model files (optional if large)
+# node
+node_modules/
+
+# models (optional)
 *.pkl
+
+# build
+dist/
